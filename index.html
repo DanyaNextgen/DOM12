@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="car-image">
+        <img id="carImg" src="./img/main_bg.png" alt="">
+    </div>
+
+    <div class="info">
+        <div>
+            <p>Запас хода</p>
+            <h1>750км</h1>
+        </div>
+        <div>
+            <p>Цена</p>
+            <h1>$89, 990</h1>
+        </div>
+    </div>
+
+    <div class="options">
+        <div class="option">
+            <p class="title">Скорость автомобиля</p>
+            <div class="info">
+                <span class="speed">60 км/ч</span>
+                <div class="arrows">
+                    <img src="./img/up_arrow.png" alt="" class="up-speed">
+                    <img src="./img/down_arrow.png" alt="" class="down-speed">
+                </div>
+            </div>
+        </div>
+        <div class="option">
+            <p class="title">Температура за окнами</p>
+            <div class="info">
+                <span class="temperature">20°</span>
+                <div class="arrows">
+                    <img src="./img/up_arrow.png" alt="" class="up-temp">
+                    <img src="./img/down_arrow.png" alt="" class="down-temp">
+                </div>
+            </div>
+        </div>
+        <div class="option">
+            <p class="title">Диски</p>
+            <div class="info">
+                <span class="wheels">19</span>
+                <div class="arrows">
+                    <img src="./img/up_arrow.png" alt=""  class="up-wheels">
+                    <img src="./img/down_arrow.png" alt="" class="down-wheels">
+                </div>
+            </div>
+        </div>
+        <div class="option">
+            <p class="title">Кондиционер</p>
+            <div class="toggle"></div>
+        </div>
+        <div class="option">
+            <p class="title">Версия Long Range</p>
+            <div class="toggle"></div>
+        </div>
+        <div class="option">
+            <p  class="title">Вид автомобиля</p>
+            <div class="toggle active" id="viewToggle"></div>
+        </div>
+    </div>
+
+    <div class="color-options" style="display: none;"> 
+        <div class="option">
+            <p class="title">Цвет салона</p>
+        </div>
+        <div class="circles">
+            <div data-image="./img/black_saloon.png" class="color-option" style="background-color: black"></div>
+            <div  data-image="./img/white_saloon.png" class="color-option" style="background-color: #F5F5F5;"></div>
+            <div data-image="./img/beige_saloon.png" class="color-option" style="background-color: beige;"></div>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

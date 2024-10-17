@@ -1,0 +1,124 @@
+body {
+    font-family: Gilroy, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    text-align: center;
+    max-width: 1000px;
+    padding: 30px;
+}
+
+.car-image img {
+    max-width: 100%;
+}
+
+.info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.info div {
+    text-align: left;
+}
+
+.info h1 {
+    margin: 0;
+    font-size: 64px;
+    color: #000000;
+}
+
+.info p {
+    font-size: 20px;
+    margin-bottom: 12px;
+    color: #707070;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.info {
+    display: flex;
+    gap: 34px;
+}
+
+.info img {
+    cursor: pointer;
+}
+
+.arrows {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #707070;
+}
+
+.option span {
+    font-size: 48px;
+    font-weight: 700;
+    color: #000000;
+}
+
+.toggle {
+    width: 40px;
+    height: 20px;
+    background-color: #ddd;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.toggle::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.toggle.active {
+    background-color: #2196F3;
+}
+
+.toggle.active::before {
+    transform: translateX(20px);
+}
+
+.color-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.circles {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.color-option {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%; 
+    margin: 0 10px;
+    cursor: pointer;
+}
